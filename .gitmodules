@@ -1,0 +1,3 @@
+[submodule "crysis2-external/osmium"]
+	path = crysis2-external/osmium
+	url = https://github.com/cragson/osmium

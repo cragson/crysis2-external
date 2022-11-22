@@ -1,0 +1,10 @@
+x64/
+x86/
+**/Debug/
+**/Release/
+**/.vs/
+
+*.exe
+*.dll
+*.idb
+*.zip
