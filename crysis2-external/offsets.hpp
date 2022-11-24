@@ -16,4 +16,6 @@ namespace Offsets
 	inline auto bypass_conrestriction = std::uintptr_t();
 
 	inline auto cgame = std::uintptr_t();
+
+	inline auto infinite_energy2 = std::uintptr_t();
 }

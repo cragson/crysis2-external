@@ -1,6 +1,5 @@
 #include <iostream>
 #include "globals.hpp"
-#include "structs.hpp"
 
 int main()
 {

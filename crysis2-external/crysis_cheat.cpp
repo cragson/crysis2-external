@@ -112,6 +112,13 @@ bool crysis_cheat::setup_offsets()
 
 	Offsets::cgame = game->deref_address< uint32_t >( cg + 3 ) + cg + 7;
 
+	const auto energy2 = game->find_pattern( L"C4 C1 7A 5C C8 ? ? ? ? 24 20", false );
+
+	if( !energy )
+		return false;
+
+	Offsets::infinite_energy2 = energy2;
+
 	return true;
 }
 
@@ -135,7 +142,7 @@ void crysis_cheat::print_offsets()
 {
 	printf( "\n" );
 
-	const auto msg = []( const std::string& name, const std::uintptr_t value )
+	constexpr auto msg = []( const std::string& name, const std::uintptr_t value )
 	{
 		printf( "[>] %-35s -> 0x%llX\n", name.c_str(), value );
 	};
@@ -146,6 +153,7 @@ void crysis_cheat::print_offsets()
 	msg( "Norecoil Crosshair", Offsets::norecoil_crosshair );
 	msg( "Bypass Console Restriction", Offsets::bypass_conrestriction );
 	msg( "CGame", Offsets::cgame );
+	msg( "Infinite Energy 2", Offsets::infinite_energy2 );
 
 	printf( "\n" );
 }

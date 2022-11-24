@@ -4,7 +4,6 @@
 class crysis_cheat : public cheat
 {
 public:
-
 	bool setup_features() override;
 	bool setup_offsets() override;
 
