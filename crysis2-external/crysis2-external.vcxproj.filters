@@ -142,5 +142,8 @@
     <ClInclude Include="ft_skills.hpp">
       <Filter>Files\features</Filter>
     </ClInclude>
+    <ClInclude Include="osmium\Memory\RegisterDumper\registercontext.hpp">
+      <Filter>osmium</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

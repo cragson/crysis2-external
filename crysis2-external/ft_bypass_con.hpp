@@ -12,6 +12,8 @@ public:
 
 	void tick() override {}
 
+	void on_shutdown() override {}
+
 private:
 	uint32_t m_address;
 };
